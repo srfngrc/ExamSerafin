@@ -18,7 +18,13 @@ namespace ExamSerafin
             int InputNumberP7;
             //int[] arr = new int[5];
             string[] InputArrayP8 = { "This", "is", "an", "Array" };
-            string[] InputArrP8 = new string[100];
+            int[] InputArrP9 = { 1, 3, 6 };
+            int[] InputArrP9_2 = { 2, 5, 4 };
+            int[] OutputArrayP9 = new int[InputArrP9.Length + InputArrP9_2.Length];
+            int InputP10;
+
+            //TO EXECUTE EACH PROBLEM OF THE EXAM JUST UNCOMMENT
+            //    PLEASE THE LINES OF CODE JUST UNDER THE PROBLEM X LINE
 
             //Problem1
             //Console.WriteLine(GetMyInfo());
@@ -58,9 +64,18 @@ namespace ExamSerafin
             //Console.WriteLine("[this], [is], [an], [array]");
             //Console.WriteLine(Problem8(InputArrayP8));
 
+            //Problem9
+            //Console.WriteLine("Entered 2 arrays of integer, Merging both and sorting in ascending order: ");
+            //OutputArrayP9 = Problem9(InputArrP9, InputArrP9_2);
+            //foreach (int valueArr in OutputArrayP9)
+            //{
+            //    Console.Write("Content of the final output array: " + valueArr + " ");
+            //}
 
-
-
+            //Problem10
+            Console.WriteLine("Please enter a number to factorize:");
+            int.TryParse(Console.ReadLine(), out InputP10);
+            Console.WriteLine(Problem10(InputP10).ToString());
 
 
 
@@ -214,10 +229,49 @@ namespace ExamSerafin
             }
         }
 
+        //Problem9
+        static private int[] Problem9(int[] IAP9, int[] IAP9_2)
+        {
+            int[] finalArrayP9 = new int[IAP9.Length + IAP9_2.Length];
+            int[] arrayExcep = new int[0];
+            try
+            {
+                for (int k=0; k < IAP9.Length; k ++)
+                {
+                    finalArrayP9[k] = IAP9[k];
+                }
+                for (int n = 0; n < IAP9_2.Length; n ++)
+                {
+                    finalArrayP9[n + IAP9.Length] = IAP9_2[n];
+                }
+                Array.Sort(finalArrayP9);
+                return finalArrayP9;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error ocurred: " + ex.ToString());
+                return arrayExcep;
+            }
+        }
 
-
-
-
+        //Problem10
+        static private int Problem10(int numbertoFact)
+        {
+            int solution10 = 1;
+            try
+            {
+                for (int p=1; p <= numbertoFact; p ++)
+                {
+                    solution10 = solution10 * p;
+                }
+                return solution10;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error ocurred: " + ex.ToString());
+                return 0;
+            }
+        }
 
 
     }
