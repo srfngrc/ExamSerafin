@@ -1,0 +1,7 @@
+C:\VSRepositories\ExamSerafinREPO\obj\Debug\ExamSerafin.csprojAssemblyReference.cache
+C:\VSRepositories\ExamSerafinREPO\obj\Debug\ExamSerafin.csproj.CoreCompileInputs.cache
+C:\VSRepositories\ExamSerafinREPO\bin\Debug\ExamSerafin.exe.config
+C:\VSRepositories\ExamSerafinREPO\bin\Debug\ExamSerafin.exe
+C:\VSRepositories\ExamSerafinREPO\bin\Debug\ExamSerafin.pdb
+C:\VSRepositories\ExamSerafinREPO\obj\Debug\ExamSerafin.exe
+C:\VSRepositories\ExamSerafinREPO\obj\Debug\ExamSerafin.pdb
