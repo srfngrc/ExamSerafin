@@ -10,6 +10,7 @@ namespace ExamSerafin
     {
         static void Main(string[] args)
         {
+            string InputStringP2;
             int InputNumberP3;
             int IN1P5;
             int IN2P5;
@@ -29,7 +30,9 @@ namespace ExamSerafin
             //Problem1
             //Console.WriteLine(GetMyInfo());
             //Problem2
-            //Console.WriteLine(Problem2());
+            //Console.WriteLine("Please enter a string: ");
+            //InputStringP2 = Console.ReadLine();
+            //Console.WriteLine(Problem2(InputStringP2));
 
             //Problem3
             //Console.WriteLine("Please enter a number: ");
@@ -101,17 +104,11 @@ namespace ExamSerafin
         }
 
         //Problem2
-        static private int Problem2()
+        static private int Problem2(string inputstrP2)
         {
             try
             {
-                string InputStringP2;
-
-                Console.WriteLine("Please enter a string: ");
-                InputStringP2 = Console.ReadLine();
-                Console.WriteLine("");
-                
-                return InputStringP2.Length;
+                return inputstrP2.Length;
             }
             catch (Exception ex)
             {
